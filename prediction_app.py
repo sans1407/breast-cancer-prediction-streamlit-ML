@@ -12,12 +12,11 @@ st.set_page_config(
     page_icon="🎗️"
 )
 
-st.title("🎗️ Breast Cancer Prediction")
+st.title(" Breast Cancer Prediction")
 st.write("Enter tumor characteristics and click Predict.")
 
-# =========================
+
 # Mean Features
-# =========================
 
 texture_mean = st.number_input("Texture Mean", value=10.38)
 smoothness_mean = st.number_input("Smoothness Mean", value=0.11840)
@@ -39,9 +38,7 @@ concave_points_se = st.number_input("Concave Points SE", value=0.01587)
 symmetry_se = st.number_input("Symmetry SE", value=0.03003)
 fractal_dimension_se = st.number_input("Fractal Dimension SE", value=0.006193)
 
-# =========================
 # Worst Features
-# =========================
 
 texture_worst = st.number_input("Texture Worst", value=17.33)
 area_worst = st.number_input("Area Worst", value=2019.0)
@@ -52,9 +49,7 @@ concave_points_worst = st.number_input("Concave Points Worst", value=0.26540)
 symmetry_worst = st.number_input("Symmetry Worst", value=0.46010)
 fractal_dimension_worst = st.number_input("Fractal Dimension Worst", value=0.11890)
 
-# =========================
 # Prediction
-# =========================
 
 if st.button("Predict"):
 
